@@ -6,6 +6,11 @@ module.exports = app => {
   const router = express.Router({
     mergeParams: true
   })
+  // 新建账号
+  router.post('/register', async (req, res) => {
+    const model = await req.Model.create(req.body)
+    res.send(model)
+  })
   // 新建分类
   router.post('/', async (req, res) => {
     const model = await req.Model.create(req.body)

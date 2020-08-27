@@ -15,6 +15,7 @@ import AdEdit from '../views/AdEdit.vue'
 import AdList from '../views/AdList.vue'
 import AdminUserEdit from '../views/AdminUserEdit.vue'
 import AdminUserList from '../views/AdminUserList.vue'
+import Account from '../views/Account.vue'
 
 Vue.use(VueRouter)
 
@@ -112,6 +113,10 @@ const routes = [
       {
         path: '/admin_users/list',
         component: AdminUserList
+      },
+      {
+        path: '/register',
+        component: Account
       }
     ]
   }
